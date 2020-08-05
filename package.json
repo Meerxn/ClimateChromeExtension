@@ -1,0 +1,22 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "This part is for me to know how the API works",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meerxn/weatherChromeExtension.git"
+  },
+  "author": "fardeen meeran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meerxn/weatherChromeExtension/issues"
+  },
+  "homepage": "https://github.com/Meerxn/weatherChromeExtension#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
