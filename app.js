@@ -10,10 +10,18 @@ app.get("/", function(request,response){
         re.on("data" , function(data){
            const weatherData = JSON.parse(data);
            console.log(weatherData);
+           const temp = weatherData.main.temp;
+           const description = weatherData.weather[0].description
+           console.log(temp);
+           response.write("<h1> Temperature in Dubai is currently " + temp + " degree Celsius <h1>");
+           response.write("<br>");
+           response.write("<h2> Weather description " + description + "</h2>");
+
+           
         })
      
     })
-    response.send("server is up and running ");
+  
    
     
 })
