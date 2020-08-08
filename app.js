@@ -11,11 +11,15 @@ app.get("/", function(request,response){
            const weatherData = JSON.parse(data);
            console.log(weatherData);
            const temp = weatherData.main.temp;
-           const description = weatherData.weather[0].description
+           const description = weatherData.weather[0].description;
+           const logoID = weatherData.weather[0].icon;
+           const logoUrl = "http://openweathermap.org/img/wn/" + logoID + "@2x.png";
            console.log(temp);
            response.write("<h1> Temperature in Dubai is currently " + temp + " degree Celsius <h1>");
            response.write("<br>");
+           response.write("<img src=" + logoUrl +">");
            response.write("<h2> Weather description " + description + "</h2>");
+           response.send();
 
            
         })
