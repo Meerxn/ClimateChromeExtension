@@ -9,7 +9,7 @@ $(document).ready(function() {
       e.preventDefault();
       var city = document.getElementById("city").value;
       var unit = document.getElementById("unit").value;
-      alert("h");
+     
       dataAdd(city,unit);
     });
   });
