@@ -1,0 +1,27 @@
+{
+    "manifest_version" : 2,
+"name" : "weather extension chrome",
+"version" : "1.0",
+ "content_scripts": [
+     {
+         "matches": [
+             "<all_urls>"
+         ],
+         "js" : ["jquery.js" ]
+     }
+ ],
+ "background" : {
+    
+        
+  
+   
+ },
+ "browser_action" : {
+     "default_icon " : "icon.png",
+    "default_popup" : "index.html",
+    "default_title" : "Find out the weather!"
+ },
+ "permissions": [
+    "activeTab"
+  ]
+}
